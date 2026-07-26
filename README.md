@@ -47,7 +47,11 @@ A modern SaaS-inspired finance management application to track income, expenses,
 
 ## 🌐 Live Demo
 
-🚧 Coming Soon
+https://expense-track-ashy.vercel.app/
+
+💻 **GitHub Repository**
+
+https://github.com/GayatriThakare1216/ExpenseTrack
 
 
 ## 📌 Project Overview
@@ -287,6 +291,15 @@ FinanceTrack
 
 # 📸 Screenshots
 
+## Register Page
+
+
+<p align="center">
+
+<img src="./public/images/register.png" width="90%"/>
+
+</p>
+
 ## Login Page
 
 
@@ -454,7 +467,6 @@ FinanceTrack is deployment ready and can be hosted on:
 
 
 - Vercel
-- Netlify
 
 
 
@@ -519,16 +531,6 @@ FinanceTrack is deployment ready and can be hosted on:
 Frontend Developer
 
 
-### Skills
-
-
-React.js  
-JavaScript  
-Tailwind CSS  
-Zustand  
-Responsive UI Development  
-Frontend Architecture
-
 
 
 ---
@@ -538,7 +540,7 @@ Frontend Architecture
 
 LinkedIn:
 
-https://www.linkedin.com/in/gayatri-thakare-32a9b4378/
+https://www.linkedin.com/in/gayatrithakare12/
 
 
 GitHub:
