@@ -1,0 +1,558 @@
+@import "tailwindcss";
+
+
+/* ==========================
+   DARK MODE
+========================== */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+
+body{
+
+transition:
+background-color .3s ease,
+color .3s ease;
+
+}
+
+
+
+::selection{
+
+background:#6366f1;
+
+color:white;
+
+}
+
+
+
+
+
+/* =================================
+ PREMIUM REACT CALENDAR
+================================= */
+
+
+.react-calendar{
+
+width:100%;
+
+max-width:none;
+
+background:transparent;
+
+border:none;
+
+font-family:inherit;
+
+}
+
+
+
+
+
+/* =================================
+ NAVIGATION
+================================= */
+
+
+.react-calendar__navigation{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin-bottom:25px;
+
+}
+
+
+
+.react-calendar__navigation button{
+
+
+height:45px;
+
+min-width:45px;
+
+padding:0 14px;
+
+
+border-radius:16px!important;
+
+
+background:
+
+linear-gradient(
+135deg,
+#6366f1,
+#8b5cf6
+)!important;
+
+
+
+color:white!important;
+
+
+font-weight:700;
+
+
+font-size:15px;
+
+
+border:none!important;
+
+
+box-shadow:
+
+0 10px 25px
+
+rgba(99,102,241,.25);
+
+
+transition:.3s;
+
+
+}
+
+
+
+.react-calendar__navigation button:hover{
+
+
+transform:translateY(-3px);
+
+
+box-shadow:
+
+0 15px 35px
+
+rgba(139,92,246,.45);
+
+
+}
+
+
+
+.react-calendar__navigation button:disabled{
+
+
+opacity:1;
+
+background:
+
+linear-gradient(
+135deg,
+#6366f1,
+#8b5cf6
+)!important;
+
+
+color:white!important;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+ WEEK DAYS
+================================= */
+
+
+.react-calendar__month-view__weekdays{
+
+
+margin-bottom:15px;
+
+
+font-size:12px;
+
+
+font-weight:800;
+
+
+text-transform:uppercase;
+
+
+color:#64748b;
+
+
+}
+
+
+
+.dark 
+.react-calendar__month-view__weekdays{
+
+
+color:#94a3b8;
+
+
+}
+
+
+
+.react-calendar__month-view__weekdays abbr{
+
+
+text-decoration:none;
+
+
+}
+
+
+
+
+
+/* =================================
+ DATE CELLS
+================================= */
+
+
+.react-calendar__tile{
+
+
+height:72px;
+
+
+border-radius:20px;
+
+
+font-weight:700;
+
+
+font-size:14px;
+
+
+position:relative;
+
+
+background:transparent!important;
+
+
+color:#1e293b!important;
+
+
+border:none!important;
+
+
+transition:.3s;
+
+
+}
+
+
+
+
+
+/* dark numbers */
+
+
+.dark .react-calendar__tile{
+
+
+color:#f8fafc!important;
+
+
+}
+
+
+
+
+
+
+/* hover */
+
+
+.react-calendar__tile:hover{
+
+
+background:
+
+rgba(99,102,241,.12)!important;
+
+
+transform:
+
+translateY(-3px);
+
+
+box-shadow:
+
+0 12px 30px
+
+rgba(99,102,241,.18);
+
+
+}
+
+
+
+
+
+.dark .react-calendar__tile:hover{
+
+
+background:
+
+rgba(139,92,246,.20)!important;
+
+
+}
+
+
+
+
+
+
+/* =================================
+ TODAY
+================================= */
+
+
+.react-calendar__tile--now{
+
+
+background:
+
+linear-gradient(
+135deg,
+#f59e0b,
+#fb923c
+)!important;
+
+
+
+color:white!important;
+
+
+
+box-shadow:
+
+0 0 25px
+
+rgba(245,158,11,.55);
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+ ACTIVE SELECTED DATE
+================================= */
+
+
+.react-calendar__tile--active{
+
+
+background:
+
+linear-gradient(
+135deg,
+#4f46e5,
+#a855f7
+)!important;
+
+
+
+color:white!important;
+
+
+box-shadow:
+
+0 18px 45px
+
+rgba(99,102,241,.5);
+
+
+transform:
+
+translateY(-3px);
+
+
+}
+
+
+
+
+
+
+.react-calendar__tile--active:hover{
+
+
+background:
+
+linear-gradient(
+135deg,
+#4338ca,
+#9333ea
+)!important;
+
+
+}
+
+
+
+
+
+
+
+/* =================================
+ OUTSIDE MONTH DAYS
+================================= */
+
+
+.react-calendar__month-view__days__day--neighboringMonth{
+
+
+color:#94a3b8!important;
+
+
+}
+
+
+
+.dark 
+.react-calendar__month-view__days__day--neighboringMonth{
+
+
+color:#64748b!important;
+
+
+}
+
+
+
+
+
+
+/* =================================
+ TILE CONTENT DOTS
+================================= */
+
+
+.react-calendar__tile div{
+
+
+display:flex;
+
+justify-content:center;
+
+
+}
+
+
+
+.react-calendar__tile div span{
+
+
+transition:.3s;
+
+
+}
+
+
+
+.react-calendar__tile:hover div span{
+
+
+transform:scale(1.4);
+
+
+}
+
+
+
+
+
+
+
+
+/* =================================
+ REMOVE DEFAULT BUTTON STYLE
+================================= */
+
+
+.react-calendar button{
+
+
+font-family:inherit;
+
+cursor:pointer;
+
+}
+
+
+
+
+
+
+/* =================================
+ DARK CALENDAR
+================================= */
+
+
+.dark .react-calendar{
+
+
+color:white;
+
+
+}
+
+
+
+
+
+.dark .react-calendar__navigation button{
+
+
+color:white!important;
+
+
+}
+
+
+
+
+
+
+/* =================================
+ SMOOTH
+================================= */
+
+
+.react-calendar *{
+
+
+transition:
+
+background .25s ease,
+
+color .25s ease,
+
+transform .25s ease;
+
+
+}
